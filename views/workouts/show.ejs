@@ -1,0 +1,23 @@
+<%- include("../partials/header") %>
+
+<h2><%= workout.name %></h2>
+
+<div class="info-box">
+  <p><strong>Category:</strong> <%= workout.category || "—" %></p>
+  <p><strong>Duration:</strong> <%= workout.duration || "—" %> minutes</p>
+  <p><strong>Reps:</strong> <%= workout.reps || "—" %></p>
+  <p><strong>Sets:</strong> <%= workout.sets || "—" %></p>
+  <p><strong>Date:</strong> <%= workout.date.toDateString() %></p>
+  <p><strong>Notes:</strong><br><%= workout.notes || "No notes" %></p>
+</div>
+
+<div class="button-row">
+  <a href="/workouts" class="btn btn-secondary">Back</a>
+  <a href="/workouts/<%= workout._id %>/edit" class="btn">Edit</a>
+
+  <form action="/workouts/<%= workout._id %>?_method=DELETE" method="POST">
+    <button class="btn btn-danger" type="submit">Delete</button>
+  </form>
+</div>
+
+<%- include("../partials/footer") %>

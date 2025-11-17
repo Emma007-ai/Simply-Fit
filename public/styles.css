@@ -1,0 +1,287 @@
+/* ========= BASE ========= */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #fff6ea;              /* very light warm orange */
+  color: #333;
+}
+
+/* ========= NAVBAR ========= */
+.navbar {
+  background: #ff914d;              /* warm orange */
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.navbar a {
+  color: #fff;
+  margin-left: 1rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* ========= MAIN LAYOUT ========= */
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* ========= BUTTONS ========= */
+.btn {
+  padding: 0.6rem 1.4rem;
+  border: none;
+  background: #ff914d;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0.5rem 0;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.btn:hover {
+  background: #ff7a26;
+}
+
+.btn-danger {
+  background: #e63946;
+}
+
+.btn-danger:hover {
+  background: #c71c30;
+}
+
+.btn-secondary {
+  background: #888;
+}
+
+.btn-secondary:hover {
+  background: #666;
+}
+
+/* ========= FORM ========= */
+.form {
+  margin-top: 1rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 0.95rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #ff914d;
+  box-shadow: 0 0 0 2px rgba(255, 145, 77, 0.2);
+}
+
+/* Notes spans full width */
+.form-notes {
+  grid-column: 1 / -1;
+}
+
+/* ========= TABLE (index page) ========= */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.table th,
+.table td {
+  border: 1px solid #f0d5b3;
+  padding: 0.6rem;
+  font-size: 0.95rem;
+}
+
+.table th {
+  background: #ffe0c2;
+}
+
+/* =======*
+/* Centered buttons under the form */
+.button-row {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+/* Small button size */
+.btn-small {
+  padding: 0.3rem 0.8rem;
+  font-size: 0.85rem;
+}
+
+/* Inline form for delete button */
+.inline-form {
+  display: inline;
+}
+
+/* Info box for show page */
+.info-box {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+}
+
+.info-box p {
+  margin: 0.4rem 0;
+}
+
+.site-logo {
+  height: 40px;
+  width: auto;
+  margin-right: 10px;
+}
+
+.logo-header a {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-highlight {
+  color: #ff7a26;
+}
+
+.hero-sub {
+  margin: 0.75rem 0 1.25rem;
+  font-size: 0.98rem;
+  line-height: 1.5;
+}
+
+.hero-logo-wrap {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-logo-img {
+  max-width: 180px;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* ===== FEATURE CARDS ===== */
+.feature-section {
+  margin-top: 1rem;
+}
+
+.section-title {
+  margin-bottom: 1rem;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.feature-card {
+  background: #fffaf2;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.04);
+}
+
+.feature-card h4 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+/* ===== CONTACT BOX ===== */
+.contact-box {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #fffaf2;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.04);
+  display: inline-block;
+}
+
+.contact-email {
+  color: #ff7a26;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-email:hover {
+  text-decoration: underline;
+}
+
+/* App name next to logo */
+.app-name {
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+  
+/* Mobile tweaks */
+@media (max-width: 700px) {
+  .hero {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+}
