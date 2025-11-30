@@ -1,0 +1,25 @@
+<%- include("./partials/header") %>
+<h2>You must be logged in to perform this action.</h2>
+<a href="/auth/google" class="btn btn">Login with Google</a>
+<a href="/auth/github" class="btn btn">Login with GitHub</a>
+<%- include("./partials/footer") %>
+
+<%- include("./partials/header") %>
+
+<div class="container text-center mt-5" style="max-width: 600px;">
+    <h2 class="mb-4">Login Required</h2>
+
+    <p class="lead">You must be logged in to perform this action.</p>
+
+    <div class="mt-4">
+        <a href="/auth/google" class="btn btn-warning btn-lg me-2">
+            Login with Google
+        </a>
+
+        <a href="/auth/github" class="btn btn-dark btn-lg">
+            Login with GitHub
+        </a>
+    </div>
+</div>
+
+<%- include("./partials/footer") %>
